@@ -1,4 +1,3 @@
-
 # vnSpaCyAddon
 
 # Start with Standard library in spaCy
@@ -14,7 +13,10 @@
     [('Tôi', 'Tôi', '', '', ''), ('là', 'là', '', '', ''), ('sinh_viên', 'sinh_viên', '', '', ''), ('năm', 'năm', '', '', ''), ('nhất', 'nhất', '', '', ''), ('sống', 'sống', '', '', ''), ('và', 'và', '', '', ''), ('học_tập', 'học_tập', '', '', ''), ('ở', 'ở', '', '', ''), ('thủ_đô', 'thủ_đô', '', '', ''), ('Hà_Nội', 'Hà_Nội', '', '', ''), ('.', '.', '', '', '')]
 
 **Data as UD format**
-    https://github.com/UniversalDependencies/UD_Vietnamese-VTB
+
+> [https://github.com/UniversalDependencies/UD_Vietnamese-VTB]
+
+(https://github.com/UniversalDependencies/UD_Vietnamese-VTB)
     
 **Training Parser:**
 
