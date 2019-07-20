@@ -64,7 +64,7 @@ download from > [https://github.com/UniversalDependencies/UD_Vietnamese-VTB](htt
 
 CoNLL-U format: [https://universaldependencies.org/format.html]
 
-##3. Training Parser:
+## 3. Training Parser:
 
     mkdir vn_jsons
     python -m spacy convert UD_Vietnamese-VTB-master\vi_vtb-ud-train.conllu vn_jsons
