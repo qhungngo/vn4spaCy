@@ -1,9 +1,8 @@
 
 
-# vnSpaCyAddon
+# vn4spaCy
 
-# Start with Standard library in spaCy
-**1. Build-in word tokenizer**
+## 1. Build-in word tokenizer
 
     from spacy.lang.vi import Vietnamese
     nlp = Vietnamese()
@@ -26,14 +25,14 @@
     ('Hà_Nội', 'Hà_Nội', '', '', '')
     ('.', '.', '', '', '')
 
-**2. Data as UD format**
+## 2. Data as UD format
  - [ ] vi_vtb-ud-dev.conllu 
  - [ ] vi_vtb-ud-test.conllu 
  - [ ] vi_vtb-ud-train.conllu
 
 download from > [https://github.com/UniversalDependencies/UD_Vietnamese-VTB](https://github.com/UniversalDependencies/UD_Vietnamese-VTB)
    
-**3. Training Parser:**
+## 3. Training Parser:
 
     mkdir vn_jsons
     python -m spacy convert UD_Vietnamese-VTB-master\vi_vtb-ud-train.conllu vn_jsons
