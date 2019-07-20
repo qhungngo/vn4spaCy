@@ -29,36 +29,39 @@
  - [ ] vi_vtb-ud-test.conllu 
  - [ ] vi_vtb-ud-train.conllu
 
-    # sent_id = test-s1
-    # text = giờ G đã điểm, gậy gộc, nước, lửa... sẵn sàng để tách chúng nếu xảy ra "song hổ đấu".
-    ---  -------  -------  -------  ---  -------  --------- -------  ---  -------
-    1    giờ      giờ      PUNCT    N    _             4    nsubj    _    _
-    2    G        G        NOUN     Ny   _             1    compound _    _
-    3    đã       đã       X        R    _             4    advmod   _    _
-    4    điểm     điểm     VERB     V    _             0    root     _    SpaceAfter=No
-    5    ,        ,        PUNCT    ,    _             4    punct    _    _
-    6    gậy gộc  gậy gộc  NOUN     N    _            12    nsubj    _    SpaceAfter=No
-    7    ,        ,        PUNCT    ,    _             8    punct    _    _
-    8    nước     nước     NOUN     N    _             6    conj     _    SpaceAfter=No
-    9    ,        ,        PUNCT    ,    _            10    punct    _    _
-    10   lửa      lửa      NOUN     N    _             6    conj     _    SpaceAfter=No
-    11   ...      ...      PUNCT    ...  _            12    punct    _    _
-    12   sẵn sàng sẵn sàng ADJ      A    _             4    xcomp    _    _
-    13   để       để       ADP      E    _            14    case     _    _
-    14   tách     tách     VERB     V    _            12    mark     _    _
-    15   chúng    chúng    PROPN    P    _            14    obj      _    _
-    16   nếu      nếu      CCONJ    C    _            17    cc       _    _
-    17   xảy      xảy      VERB     V    _            14    conj     _    _
-    18   ra       ra       X        R    _            17    advmod   _    _
-    19   "        "        PUNCT    "    _            21    punct    _    SpaceAfter=No
-    20   song     song     NUM      M    NumType=Card 21    nummod   _    _
-    21   hổ       hổ       NOUN     N    _            17    obj      _    _
-    22   đấu      đấu      VERB     V    _            21    xcomp    _    SpaceAfter=No
-    23   "        "        PUNCT    "    _            21    punct    _    SpaceAfter=No
-    24   .        .        PUNCT    .    _            4     punct    _    _
+''# sent_id = test-s1
+''# text = giờ G đã điểm, gậy gộc, nước, lửa... sẵn sàng để tách chúng nếu xảy ra "song hổ đấu".
+
+|ID|Form|Lemma|Upos|Xpos|FEATS|HEAD|DEPREL|DEPS|MISC|
+|--|--|--|--|--|--|--|--|--|--|
+|1|giờ|giờ|PUNCT|N|_|4|nsubj|_|_|
+|2|G|G|NOUN|Ny|_|1|compound|_|_|
+|3|đã|đã|X|R|_|4|advmod|_|_|
+|4|điểm|điểm|VERB|V|_|0|root|_|SpaceAfter=No|
+|5|,|,|PUNCT|,|_|4|punct|_|_|
+|6|gậy gộc|gậy gộc|NOUN|N|_|12|nsubj|_|SpaceAfter=No|
+|7|,|,|PUNCT|,|_|8|punct|_|_|
+|8|nước|nước|NOUN|N|_|6|conj|_|SpaceAfter=No|
+|9|,|,|PUNCT|,|_|10|punct|_|_|
+|10|lửa|lửa|NOUN|N|_|6|conj|_|SpaceAfter=No|
+|11|...|...|PUNCT|...|_|12|punct|_|_|
+|12|sẵn sàng|sẵn sàng|ADJ|A|_|4|xcomp|_|_|
+|13|để|để|ADP|E|_|14|case|_|_|
+|14|tách|tách|VERB|V|_|12|mark|_|_|
+|15|chúng|chúng|PROPN|P|_|14|obj|_|_|
+|16|nếu|nếu|CCONJ|C|_|17|cc|_|_|
+|17|xảy|xảy|VERB|V|_|14|conj|_|_|
+|18|ra|ra|X|R|_|17|advmod|_|_|
+|19|"|"|PUNCT|"|_|21|punct|_|SpaceAfter=No|
+|20|song|song|NUM|M|NumType=Card|21|nummod|_|_|
+|21|hổ|hổ|NOUN|N|_|17|obj|_|_|
+|22|đấu|đấu|VERB|V|_|21|xcomp|_|SpaceAfter=No|
+|23|"|"|PUNCT|"|_|21|punct|_|SpaceAfter=No|
+|24|.|.|PUNCT|.|_|4|punct|_|_|
 
 download from > [https://github.com/UniversalDependencies/UD_Vietnamese-VTB](https://github.com/UniversalDependencies/UD_Vietnamese-VTB)
-   
+CoNLL-U format: [https://universaldependencies.org/format.html]
+
 **Training Parser:**
 
     mkdir vn_jsons
