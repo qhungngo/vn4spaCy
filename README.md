@@ -144,7 +144,7 @@ Reference: Issues 3056 > [https://github.com/explosion/spaCy/issues/3056]
     	running check
     	warning: check: missing required meta-data: url
     
-    	warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
+    	warning: check: missing meta-data: either (author and author_email) must be supplied
     
     	creating vi_model-0.0.0
     	creating vi_model-0.0.0\vi_model
