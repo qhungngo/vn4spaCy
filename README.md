@@ -114,4 +114,74 @@ CoNLL-U format: [https://universaldependencies.org/format.html]
     ✔ Created best model
     vn_models\model-best
     
+Reference: Issues 3056 > [https://github.com/explosion/spaCy/issues/3056]
+
 ## 4. Package
+
+    python -m spacy package vn_models\model-final vn_models
+    
+        Loaded meta.json from file
+        vn_models\model-final\meta.json
+        Successfully created package 'vi_model-0.0.0'
+        vn_models\vi_model-0.0.0
+        To build the package, run `python setup.py sdist` in this directory
+    
+    py setup.py sdist
+    
+    	running sdist
+    	running egg_info
+    	creating vi_model.egg-info
+    	writing vi_model.egg-info\PKG-INFO
+    	writing dependency_links to vi_model.egg-info\dependency_links.txt
+    	writing requirements to vi_model.egg-info\requires.txt
+    	writing top-level names to vi_model.egg-info\top_level.txt
+    	writing manifest file 'vi_model.egg-info\SOURCES.txt'
+    	reading manifest file 'vi_model.egg-info\SOURCES.txt'
+    	reading manifest template 'MANIFEST.in'
+    	writing manifest file 'vi_model.egg-info\SOURCES.txt'
+    	warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+    
+    	running check
+    	warning: check: missing required meta-data: url
+    
+    	warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
+    
+    	creating vi_model-0.0.0
+    	creating vi_model-0.0.0\vi_model
+    	creating vi_model-0.0.0\vi_model.egg-info
+    	creating vi_model-0.0.0\vi_model\vi_model-0.0.0
+    	creating vi_model-0.0.0\vi_model\vi_model-0.0.0\ner
+    	creating vi_model-0.0.0\vi_model\vi_model-0.0.0\parser
+    	creating vi_model-0.0.0\vi_model\vi_model-0.0.0\tagger
+    	creating vi_model-0.0.0\vi_model\vi_model-0.0.0\vocab
+    	copying files to vi_model-0.0.0...
+    	copying MANIFEST.in -> vi_model-0.0.0
+    	copying meta.json -> vi_model-0.0.0
+    	copying setup.py -> vi_model-0.0.0
+    	copying vi_model\__init__.py -> vi_model-0.0.0\vi_model
+    	copying vi_model\meta.json -> vi_model-0.0.0\vi_model
+    	copying vi_model.egg-info\PKG-INFO -> vi_model-0.0.0\vi_model.egg-info
+    	copying vi_model.egg-info\SOURCES.txt -> vi_model-0.0.0\vi_model.egg-info
+    	copying vi_model.egg-info\dependency_links.txt -> vi_model-0.0.0\vi_model.egg-info
+    	copying vi_model.egg-info\not-zip-safe -> vi_model-0.0.0\vi_model.egg-info
+    	copying vi_model.egg-info\requires.txt -> vi_model-0.0.0\vi_model.egg-info
+    	copying vi_model.egg-info\top_level.txt -> vi_model-0.0.0\vi_model.egg-info
+    	copying vi_model\vi_model-0.0.0\meta.json -> vi_model-0.0.0\vi_model\vi_model-0.0.0
+    	copying vi_model\vi_model-0.0.0\tokenizer -> vi_model-0.0.0\vi_model\vi_model-0.0.0
+    	copying vi_model\vi_model-0.0.0\ner\cfg -> vi_model-0.0.0\vi_model\vi_model-0.0.0\ner
+    	copying vi_model\vi_model-0.0.0\ner\model -> vi_model-0.0.0\vi_model\vi_model-0.0.0\ner
+    	copying vi_model\vi_model-0.0.0\ner\moves -> vi_model-0.0.0\vi_model\vi_model-0.0.0\ner
+    	copying vi_model\vi_model-0.0.0\parser\cfg -> vi_model-0.0.0\vi_model\vi_model-0.0.0\parser
+    	copying vi_model\vi_model-0.0.0\parser\model -> vi_model-0.0.0\vi_model\vi_model-0.0.0\parser
+    	copying vi_model\vi_model-0.0.0\parser\moves -> vi_model-0.0.0\vi_model\vi_model-0.0.0\parser
+    	copying vi_model\vi_model-0.0.0\tagger\cfg -> vi_model-0.0.0\vi_model\vi_model-0.0.0\tagger
+    	copying vi_model\vi_model-0.0.0\tagger\model -> vi_model-0.0.0\vi_model\vi_model-0.0.0\tagger
+    	copying vi_model\vi_model-0.0.0\tagger\tag_map -> vi_model-0.0.0\vi_model\vi_model-0.0.0\tagger
+    	copying vi_model\vi_model-0.0.0\vocab\key2row -> vi_model-0.0.0\vi_model\vi_model-0.0.0\vocab
+    	copying vi_model\vi_model-0.0.0\vocab\lexemes.bin -> vi_model-0.0.0\vi_model\vi_model-0.0.0\vocab
+    	copying vi_model\vi_model-0.0.0\vocab\strings.json -> vi_model-0.0.0\vi_model\vi_model-0.0.0\vocab
+    	copying vi_model\vi_model-0.0.0\vocab\vectors -> vi_model-0.0.0\vi_model\vi_model-0.0.0\vocab
+    	Writing vi_model-0.0.0\setup.cfg
+    	creating dist
+    	Creating tar archive
+    	removing 'vi_model-0.0.0' (and everything under it)
