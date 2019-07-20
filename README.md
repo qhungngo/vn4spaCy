@@ -1,4 +1,4 @@
-# vnSpaCyAddon
+# vn4spaCy
 
 ## 1. Test build-in word tokenizer
 
