@@ -66,24 +66,24 @@ CoNLL-U format: [https://universaldependencies.org/format.html]
 
 **The tagset in use contains 17 main lexical tags:**
 
-Np - Proper noun
-Nc - Classifier
-Nu - Unit noun
-N - Common noun
-V - Verb
-A - Adjective
-P - Pronoun
-R - Adverb
-L - Determiner
-M - Numeral
-E - Preposition
-C - Subordinating conjunction
-CC - Coordinating conjunction
-I - Interjection
-T - Auxiliary, modal words
-Y - Abbreviation
-Z - Bound morphemes
-X - Unknown
+    Np - Proper noun
+    Nc - Classifier
+    Nu - Unit noun
+    N - Common noun
+    V - Verb
+    A - Adjective
+    P - Pronoun
+    R - Adverb
+    L - Determiner
+    M - Numeral
+    E - Preposition
+    C - Subordinating conjunction
+    CC - Coordinating conjunction
+    I - Interjection
+    T - Auxiliary, modal words
+    Y - Abbreviation
+    Z - Bound morphemes
+    X - Unknown
 
 ## 3. Training Parser:
 
@@ -206,3 +206,5 @@ Reference: Issues 3056 > [https://github.com/explosion/spaCy/issues/3056]
     	creating dist
     	Creating tar archive
     	removing 'vi_model-0.0.0' (and everything under it)
+
+
