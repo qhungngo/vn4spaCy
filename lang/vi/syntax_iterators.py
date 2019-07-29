@@ -1,8 +1,9 @@
 # coding: utf8
+# modifier: Hung Ngo
+# /home/abc/anaconda3/lib/python3.7/site-packages/spacy/language/vi/
+
 from __future__ import unicode_literals
-
 from ...symbols import NOUN, PROPN, PRON
-
 
 def noun_chunks(obj):
     """
