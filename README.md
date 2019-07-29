@@ -2,6 +2,13 @@
 
 ## 1. Test build-in word tokenizer
 
+Install pyvi module from [https://pypi.org/project/pyvi/] and [https://github.com/trungtv/vi_spacy]
+
+    pip install pyvi
+    pip install https://github.com/trungtv/vi_spacy/raw/master/packages/vi_spacy_model-0.2.1/dist/vi_spacy_model-0.2.1.tar.gz
+
+**Test code:**
+
     from spacy.lang.vi import Vietnamese
     nlp = Vietnamese()
     doc = nlp(u"Tôi là sinh viên năm nhất sống và học tập ở thủ đô Hà Nội.")
