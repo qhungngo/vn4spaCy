@@ -12,11 +12,15 @@ _num_words = [
     "bốn",
     "năm",
     "sáu",
-    "bẩy",
+    "bảy",
     "tám",
     "chín",
     "mười",
+    "mươi",
     "trăm",
+    "ngàn",
+    "nghìn",
+    "triệu",
     "tỷ",
 ]
 
