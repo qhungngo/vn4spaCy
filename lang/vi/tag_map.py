@@ -1,28 +1,42 @@
 # coding: utf8
 from __future__ import unicode_literals
 
-from ..symbols import POS, ADV, NOUN, ADP, PRON, SCONJ, PROPN, DET, SYM, INTJ
-from ..symbols import PUNCT, NUM, AUX, X, CONJ, ADJ, VERB, PART, SPACE, CCONJ
-
+from ...symbols import POS, PUNCT, SYM, ADJ, CCONJ, NUM, DET, ADV, ADP, X, VERB
+from ...symbols import NOUN, PROPN, PART, INTJ, SPACE, PRON, AUX
 
 TAG_MAP = {
-    "ADV": {POS: ADV},
-    "NOUN": {POS: NOUN},
-    "ADP": {POS: ADP},
-    "PRON": {POS: PRON},
-    "SCONJ": {POS: SCONJ},
-    "PROPN": {POS: PROPN},
-    "DET": {POS: DET},
-    "SYM": {POS: SYM},
-    "INTJ": {POS: INTJ},
+    ".": {POS: PUNCT, "PunctType": "peri"},
+    ",": {POS: PUNCT, "PunctType": "comm"},
+    "-LRB-": {POS: PUNCT, "PunctType": "brck", "PunctSide": "ini"},
+    "-RRB-": {POS: PUNCT, "PunctType": "brck", "PunctSide": "fin"},
+    "(": {POS: PUNCT, "PunctType": "brck", "PunctSide": "ini"},
+    ")": {POS: PUNCT, "PunctType": "brck", "PunctSide": "fin"},
+    "``": {POS: PUNCT, "PunctType": "quot", "PunctSide": "ini"},
+    '""': {POS: PUNCT, "PunctType": "quot", "PunctSide": "fin"},
+    "''": {POS: PUNCT, "PunctType": "quot", "PunctSide": "fin"},
+    ":": {POS: PUNCT},
+    ";": {POS: PUNCT},
+    "$": {POS: SYM, "Other": {"SymType": "currency"}},
+    "£": {POS: SYM, "Other": {"SymType": "currency"}},
+    "€": {POS: SYM, "Other": {"SymType": "currency"}},
+    "#": {POS: SYM, "Other": {"SymType": "numbersign"}},
+    "A": {POS: ADJ},
+    "N": {POS: NOUN, "Number": "sing"},
+    "Np":{POS: PROPN, "NounType": "prop", "Number": "sing"},
+    "Nc": {POS: NOUN},
+    "Nu": {POS: NOUN},
+    "Ny": {POS: NOUN},
+    "P": {POS: PRON, "PronType": "prs"},
+    "R": {POS: ADV},
+    "V": {POS: VERB},
+    "E": {POS: ADP},
+    "M": {POS: NUM, "NumType": "card"},
+    "CC": {POS: CCONJ, "ConjType": "coor"},
+    "T": {POS: INTJ},
     "PUNCT": {POS: PUNCT},
-    "NUM": {POS: NUM},
     "AUX": {POS: AUX},
     "X": {POS: X},
-    "CONJ": {POS: CONJ},
-    "CCONJ": {POS: CCONJ},
-    "ADJ": {POS: ADJ},
-    "VERB": {POS: VERB},
-    "PART": {POS: PART},
-    "SP": {POS: SPACE},
+    "C": {POS: CCONJ},
+    "CC": {POS: CCONJ},
+    "L": {POS: DET},
 }
