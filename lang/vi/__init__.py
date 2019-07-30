@@ -8,6 +8,7 @@ from ...tokens import Doc
 from .stop_words import STOP_WORDS
 from ...util import add_lookups
 from .lex_attrs import LEX_ATTRS
+from .tag_map import TAG_MAP 
 from .syntax_iterators import SYNTAX_ITERATORS
 
 class VietnameseDefaults(Language.Defaults):
@@ -17,6 +18,7 @@ class VietnameseDefaults(Language.Defaults):
         Language.Defaults.lex_attr_getters[NORM], BASE_NORMS
     )
     lex_attr_getters.update(LEX_ATTRS)
+    tag_map = TAG_MAP
     stop_words = STOP_WORDS
     syntax_iterators = SYNTAX_ITERATORS
     use_pyvi = True
@@ -48,4 +50,4 @@ class Vietnamese(Language):
             return Doc(self.vocab, words=words, spaces=spaces)
 
 
-__all__ = ["Vietnamese"]
+__all__ = ["Vietnamese"] 
