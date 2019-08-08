@@ -226,4 +226,4 @@ Reference: Issues 3056 > [https://github.com/explosion/spaCy/issues/3056]
 ## 5. Check and change library
     import sysconfig
     sysconfig.get_paths()['purelib']
-'>> '/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages'
+ '/usr/local/Cellar/lib/python3.7/site-packages'
