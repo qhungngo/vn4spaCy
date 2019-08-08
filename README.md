@@ -30,6 +30,15 @@ Install pyvi module from [https://pypi.org/project/pyvi/] and [https://github.co
     ('Hà_Nội', 'Hà_Nội', '', '', '')
     ('.', '.', '', '', '')
 
+**Test code:**
+    import spacy
+    nlp = spacy.load('vi_spacy_model')
+    doc = nlp('Cộng đồng xử lý ngôn ngữ tự nhiên'))
+    for token in doc:
+        print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
+                token.shape_, token.is_alpha, token.is_stop)
+            
+            
 ## 2. Prepare corpus (UD format)
  - [ ] vi_vtb-ud-dev.conllu 
  - [ ] vi_vtb-ud-test.conllu 
@@ -214,4 +223,7 @@ Reference: Issues 3056 > [https://github.com/explosion/spaCy/issues/3056]
     	Creating tar archive
     	removing 'vi_model-0.0.0' (and everything under it)
 
-
+## 5. Check and change library
+    import sysconfig
+    sysconfig.get_paths()['purelib']
+'>> '/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages'
