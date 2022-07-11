@@ -5,7 +5,6 @@
 Install pyvi module from [https://pypi.org/project/pyvi/] and [https://github.com/trungtv/vi_spacy]
 
     pip install pyvi
-    pip install https://github.com/trungtv/vi_spacy/raw/master/packages/vi_spacy_model-0.2.1/dist/vi_spacy_model-0.2.1.tar.gz
 
 **Test code:**
 
@@ -30,6 +29,10 @@ Install pyvi module from [https://pypi.org/project/pyvi/] and [https://github.co
     ('Hà_Nội', 'Hà_Nội', '', '', '')
     ('.', '.', '', '', '')
 
+## 2. vi_spacy from Trungtv
+
+    pip install https://github.com/trungtv/vi_spacy/raw/master/packages/vi_spacy_model-0.2.1/dist/vi_spacy_model-0.2.1.tar.gz
+
 **Test code:**
 ```
     import spacy
@@ -40,7 +43,7 @@ Install pyvi module from [https://pypi.org/project/pyvi/] and [https://github.co
                 token.shape_, token.is_alpha, token.is_stop)
 ```            
             
-## 2. Prepare corpus (UD format)
+## 3. Prepare corpus (UD format)
  - [ ] vi_vtb-ud-dev.conllu 
  - [ ] vi_vtb-ud-test.conllu 
  - [ ] vi_vtb-ud-train.conllu
@@ -102,7 +105,7 @@ CoNLL-U format: [https://universaldependencies.org/format.html]
     Z - Bound morphemes
     X - Unknown
 
-## 3. Training Parser:
+## 4. Training Parser:
 
     mkdir vn_jsons
     python -m spacy convert UD_Vietnamese-VTB-master\vi_vtb-ud-train.conllu vn_jsons
@@ -154,7 +157,7 @@ CoNLL-U format: [https://universaldependencies.org/format.html]
     
 Reference: Issues 3056 > [https://github.com/explosion/spaCy/issues/3056]
 
-## 4. Package
+## 5. Package
 
     python -m spacy package vn_models\model-final vn_models
     
@@ -224,7 +227,7 @@ Reference: Issues 3056 > [https://github.com/explosion/spaCy/issues/3056]
     	Creating tar archive
     	removing 'vi_model-0.0.0' (and everything under it)
 
-## 5. Check and change library
+## 6. Check and change library
     import sysconfig
     sysconfig.get_paths()['purelib']
- '/usr/local/Cellar/lib/python3.7/site-packages'
+    '/usr/local/Cellar/lib/python3.7/site-packages'
