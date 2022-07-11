@@ -105,6 +105,8 @@ CoNLL-U format: [https://universaldependencies.org/format.html]
     Z - Bound morphemes
     X - Unknown
 
+**Convert data format for training dataset:**
+
     mkdir vn_jsons
     python -m spacy convert UD_Vietnamese-VTB-master\vi_vtb-ud-train.conllu vn_jsons
     python -m spacy convert UD_Vietnamese-VTB-master\vi_vtb-ud-dev.conllu vn_jsons
