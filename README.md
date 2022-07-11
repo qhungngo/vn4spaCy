@@ -105,12 +105,13 @@ CoNLL-U format: [https://universaldependencies.org/format.html]
     Z - Bound morphemes
     X - Unknown
 
-## 4. Training Parser:
-
     mkdir vn_jsons
     python -m spacy convert UD_Vietnamese-VTB-master\vi_vtb-ud-train.conllu vn_jsons
     python -m spacy convert UD_Vietnamese-VTB-master\vi_vtb-ud-dev.conllu vn_jsons
     python -m spacy convert UD_Vietnamese-VTB-master\vi_vtb-ud-test.conllu vn_jsons
+    
+## 4. Training Parser:
+
     mkdir vn_models
     python -m spacy train vi vn_models vn_jsons\vi_vtb-ud-train.json vn_jsons\vi_vtb-ud-dev.json
     
